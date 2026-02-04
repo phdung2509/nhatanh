@@ -25,6 +25,9 @@ body{
     width: 85%;
     margin: auto;
     border-bottom: 1px solid cyan ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .nav {
     display: flex;
@@ -84,6 +87,13 @@ body{
     animation-delay: 1s, 3s;
     filter: drop-shadow(1px 1px 20px cyan);
     border-radius: 30%;
+}
+.content .img2 img{
+display: none;
+}
+.content .img3 img{
+display: none;
+
 }
 .menu-toggle{
     display: none;
@@ -180,19 +190,23 @@ body{
     display: none;
     position: absolute;
 }
+
 @media (max-width: 768px){
     .header{
         width:85% ;
+        background: black;
     }
     .text .text0{
         padding-top: 80%;
-        padding-left: 18%;
+        padding-left: 8%;
     }
     .text .text1{
-        padding-left: 25%;
+        padding-left: 12%;
+        
     }
     .text .text2{
-        padding-left: 10%;
+        padding-left: 8%;
+        font-size: 25px;
     }
 
    .menu-toggle{
@@ -205,7 +219,7 @@ body{
     .content .img img{
         width: 80%;
     }
-    .img2 img{
+    .content .img2 img{
         display: flex;
         left: 0;
     }
@@ -215,11 +229,21 @@ body{
     .img1 img{
         display: none;
     }
+    .content .img3 img{
+    display: flex;
+    size:10%;
+    width: 60px;
+    position: absolute;
+    top:4%;
+    left: 35%;
+
+    
+}
     .nav{
         position: absolute;
         top: 12%;
         right: 8%;
-        width: 30%;
+        width: 35%;
         height:35%;
         background: cyan;
         flex-direction: column;
