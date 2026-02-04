@@ -217,7 +217,7 @@ display: none;
         
     }
     .content .img img{
-        width: 80%;
+        width: 100%;
     }
     .content .img2 img{
         display: flex;
@@ -241,10 +241,10 @@ display: none;
 }
     .nav{
         position: absolute;
-        top: 12%;
+        top: 100%;
         right: 8%;
         width: 35%;
-        height:35%;
+        height:-1%;
         background: cyan;
         flex-direction: column;
         align-items: center;
