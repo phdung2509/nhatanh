@@ -88,8 +88,9 @@ body{
 .menu-toggle{
     display: none;
     flex-direction: column;
-    gap: 8px;
+    gap: 9px;
     cursor: pointer;
+    margin-top: 13px;
 }
 
 .menu-toggle span{
@@ -175,24 +176,45 @@ body{
     height: 40%;
     top: 64%;
 }
+.img2 img{
+    display: none;
+    position: absolute;
+}
 @media (max-width: 768px){
     .header{
         width:85% ;
     }
-    .text0{
-        padding-top: 60%;
+    .text .text0{
+        padding-top: 80%;
+        padding-left: 18%;
     }
-    .menu-toggle{
+    .text .text1{
+        padding-left: 25%;
+    }
+    .text .text2{
+        padding-left: 10%;
+    }
+
+   .menu-toggle{
         display: flex;
     }
     .img{
-        left:30%;
-        width;
+        left:10%;
+        
     }
     .content .img img{
-        width: 60%;
+        width: 80%;
     }
-
+    .img2 img{
+        display: flex;
+        left: 0;
+    }
+    .content .img2 img{
+        width: 40%;
+    }
+    .img1 img{
+        display: none;
+    }
     .nav{
         position: absolute;
         top: 12%;
@@ -206,11 +228,11 @@ body{
         padding: 50px 0;
         display: none;
        color: black;
-        border-radius: 30%;
+        border-radius: 20%;
+        transition: 0.5s ease;
       }
       .nav li a{
         color:black;
-        padding-bottom: 20px;
       }
     .nav.active{
         display: flex;
