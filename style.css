@@ -85,6 +85,20 @@ body{
     filter: drop-shadow(1px 1px 20px cyan);
     border-radius: 30%;
 }
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+    width: 28px;
+    height: 3px;
+    background: cyan;
+    border-radius: 2px;
+    
+}
 @keyframes slidetop {
     0%{
         transform: translateY(100px);
@@ -161,8 +175,47 @@ body{
     height: 40%;
     top: 64%;
 }
-@media (max-width: 768px) {
-    .logo{
-        font-size: 40px;
-        padding-left: 2%;
+@media (max-width: 768px){
+    .header{
+        width:85% ;
+    }
+    .text0{
+        padding-top: 60%;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    .img{
+        left:30%;
+        width;
+    }
+    .content .img img{
+        width: 60%;
+    }
+
+    .nav{
+        position: absolute;
+        top: 12%;
+        right: 8%;
+        width: 30%;
+        height:35%;
+        background: cyan;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 0;
+        display: none;
+       color: black;
+        border-radius: 30%;
+      }
+      .nav li a{
+        color:black;
+        padding-bottom: 20px;
+      }
+    .nav.active{
+        display: flex;
+    }
+
+    .follow{
+        display: none;
     }

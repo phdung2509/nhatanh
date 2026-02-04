@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huu Dung</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/img/image.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image.png">
+
 </head>
 <body>
     <header class="header">
     <h2 class="logo">Nhat<span class="red">Anh</span>
     
     </h2>
-
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <ul class="nav">
-        <li><a href="index1.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -31,6 +36,11 @@
      <div class="img"><img src="z7494137178798_980cd8ed3b941af8f2f2a9c7373fea9a.jpg"></div>
      <div class="img1"><img src="unicorn-16249_512.gif"></div>
 </div>
+<script>
+function toggleMenu(){
+    document.querySelector(".nav").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
